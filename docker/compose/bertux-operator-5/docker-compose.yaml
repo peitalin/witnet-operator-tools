@@ -36,3 +36,24 @@ services:
       - "25337:21337"
     volumes:
       - "$HOME/.witnet5:/.witnet:rw"
+  node6:
+    image: witnet/witnet-rust
+    restart: unless-stopped
+    ports:
+      - "26337:21337"
+    volumes:
+      - "$HOME/.witnet6:/.witnet:rw"
+  node7:
+    image: witnet/witnet-rust
+    restart: unless-stopped
+    ports:
+      - "27337:21337"
+    volumes:
+      - "$HOME/.witnet7:/.witnet:rw"
+  node8:
+    image: witnet/witnet-rust
+    restart: unless-stopped
+    ports:
+      - "28337:21337"
+    volumes:
+      - "$HOME/.witnet8:/.witnet:rw"
