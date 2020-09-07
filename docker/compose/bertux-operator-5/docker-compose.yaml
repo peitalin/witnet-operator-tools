@@ -12,7 +12,7 @@ services:
   node2:
     image: witnet/witnet-rust
     restart: unless-stopped
-    command: node server --master-key-import /.witnet2/config/master.key
+    command: node server --master-key-import /.witnet/config/master.key
     ports:
       - "22337:21337"
     volumes:
