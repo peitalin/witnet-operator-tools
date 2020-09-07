@@ -4,7 +4,7 @@ services:
   node:
     image: witnet/witnet-rust
     restart: unless-stopped
-    command: node server --master-key-import ./master1.key
+    command: node server --master-key-import /root/witnet-operator-tools/docker/compose/bertux-operator-5/master1.key
     ports:
       - "21337:21337"
     volumes:
@@ -12,7 +12,7 @@ services:
   node2:
     image: witnet/witnet-rust
     restart: unless-stopped
-    command: node server --master-key-import ./master2.key
+    command: node server --master-key-import /root/witnet-operator-tools/docker/compose/bertux-operator-5/master2.key
     ports:
       - "22337:21337"
     volumes:
