@@ -16,7 +16,7 @@ services:
     ports:
       - "22337:21337"
     volumes:
-      - "$HOME/.witnet:/.witnet2:rw"
+      - "$HOME/.witnet2:/.witnet:rw"
   # node3:
   #   image: witnet/witnet-rust
   #   restart: unless-stopped
